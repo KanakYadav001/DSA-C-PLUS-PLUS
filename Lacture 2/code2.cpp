@@ -11,7 +11,7 @@ int main() {
     int newPrice = int(price);
 
     cout << newPrice << "\n" ;
-
+    cout << ! (6<4) << "\n";
     cout << b << "\n" ;
 
 
