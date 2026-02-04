@@ -22,10 +22,8 @@ int NcR(int n ,int r){
     
     int Nfacto =facto(n);
     int Rfacto =facto(r);
-   
-    int NMinusR = n-r;
  
-    int NMinusRFacto =facto(NMinusR);
+    int NMinusRFacto =facto(n-r);
 
     int nCr = Nfacto / (Rfacto*NMinusRFacto);
 
