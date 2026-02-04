@@ -2,33 +2,30 @@
 
 using namespace std ;
 
+
+
+
+int facto(int n){
+    
+    int facto = 1;
+
+    for(int i=1;i<=n ;i++){
+        facto *= i;
+    }
+
+    return facto;
+    
+   
+}
+
 int NcR(int n ,int r){
     
-    int Nfacto =1;
-    int Rfacto =1;
-    int NMinusRFacto =1;
-
-    for(int i=1 ;i<=n ; i++){
-         Nfacto *= i;
-    }
-
-    cout << Nfacto << '\n';
-
-
-    for(int j=1 ;j<=r ; j++){
-         Rfacto *= j;
-    }
-
-    
-
+    int Nfacto =facto(n);
+    int Rfacto =facto(r);
+   
     int NMinusR = n-r;
-
-    
-    
-    for(int k=1 ;k<=NMinusR ; k++){
-         NMinusRFacto *= k;
-    }
-
+ 
+    int NMinusRFacto =facto(NMinusR);
 
     int nCr = Nfacto / (Rfacto*NMinusRFacto);
 
